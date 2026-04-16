@@ -1,0 +1,195 @@
+body{
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: linear-gradient(rgb(234, 159, 159), rgb(80, 66, 49));
+    animation: fadeIn 0.3s ease-in;
+    background-attachment: fixed;
+    background-size: 100vh;
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    text-align: center;
+    border-bottom: burlywood 5px solid 20%;
+}
+
+h1 img{
+    max-width: 150px;
+    height: auto;
+    padding: 5px;
+    border-radius: 100%;
+     animation: popIn 0.8s ease;
+}
+/*this is for the contact us pge*/
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+/*navigation pane in general*/
+.navigation {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px ;
+}
+/*specific navigation icons...still need to figure it out*/
+.navibar a {
+    color: aliceblue;
+    border-radius: 250px;
+    background-image: linear-gradient(rgb(234, 159, 159), burlywood);
+    text-decoration:pink 12px;
+    font-size: 20px;
+    padding: 15px;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+}
+
+.navibar a:hover {
+    color: rgb(121, 207, 102);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+/*this is for the about me page*/
+.introduction {
+    max-width: 400px;
+    font-size: 18px;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(rgb(234, 159, 159),rgb(207, 178, 148));
+}/*this is for the portfolio page*/
+.description {
+    font-size: 27px;
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+    border-radius:  15px; 
+    background-image: linear-gradient(rgb(234, 159, 159), rgb(161, 141, 141));
+}
+/*contact us text*/
+form {
+    background-color:rgba(245, 245, 220, 0.379);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    padding: 5%;
+    width: 50%;
+}
+.con4,.con3,.con1,.con2{
+    display: grid;
+    align-content: center;
+    border-radius: 15px;
+}
+
+.skillset {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+.credentials{
+    display: flex;
+    justify-content: center;
+}
+
+.skilz{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
+.logo {
+    display: flex;    
+    padding: 15px;
+    border-radius: 15%;
+    animation: float 3s ease-in-out infinite;
+}
+
+.page1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.portfolio {
+    display: flex;
+    border: 5px solid white;
+    border-radius: 15px;
+    gap: 30px;
+    height: 30%;
+    width: 30%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+
+.portfolio:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.proofs {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+ 
+button {
+    padding: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:rgba(217, 205, 183, 0.731);
+    color: aliceblue;
+    border-radius: 15px;
+    transition: all 0.2s ease;
+}
+
+button:hover{
+    transform: scale(1.05);
+    background-color: rgb(211, 167, 47);
+    color: rgb(250, 237, 212);
+}
+
+/*exclusive for the animations*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
